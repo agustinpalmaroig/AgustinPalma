@@ -22,7 +22,7 @@ public class github_act extends AppCompatActivity {
 
         spinner = (Spinner) findViewById(R.id.idspinner);
 
-        String[] libros = {"Seleccione Libros", "Farenheith", "Revival", "El Alquimista"};
+        String[] libros = {"Seleccione Libros", "Farenheith", "Revival", "El Alquimista", "El Poder", "Despertar"};
         ArrayAdapter<String> adapt = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, libros);
         spinner.setAdapter(adapt);
 
@@ -47,18 +47,29 @@ public class github_act extends AppCompatActivity {
 
         if(spinner.getSelectedItem().toString().equals("Farenheith"))
         {
-            txt.setText("El valor de "+ spinner.getSelectedItem().toString()+" es de : 5000 ");
+            txt.setText("El valor de "+ spinner.getSelectedItem().toString()+" es de : 7000 ");
         }
 
         if(spinner.getSelectedItem().toString().equals("Revival"))
         {
-            txt.setText("El valor de "+ spinner.getSelectedItem().toString()+" es de : 12000 ");
+            txt.setText("El valor de "+ spinner.getSelectedItem().toString()+" es de : 22000 ");
         }
 
         if(spinner.getSelectedItem().toString().equals("El Alquimista"))
         {
             txt.setText("El valor de "+ spinner.getSelectedItem().toString()+" es de : 45000 ");
         }
+
+        if(spinner.getSelectedItem().toString().equals("El Poder"))
+        {
+            txt.setText("El valor de "+spinner.getSelectedItem().toString()+" es de : 88000 ");
+        }
+
+        if(spinner.getSelectedItem().toString().equals("Despertar"))
+        {
+            txt.setText("El valor de "+spinner.getSelectedItem().toString()+" es de : 156000 ");
+        }
+
 
     }
 
